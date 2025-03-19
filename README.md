@@ -1,6 +1,7 @@
 # CRUD PHP - Rede Social
 
 Este é um projeto simples de **CRUD** (Create, Read, Update, Delete) desenvolvido em **PHP**, utilizando **Bootstrap**, **CSS** e **MySQL** para simular um sistema de registro e postagens de uma rede social fictícia, semelhante ao Facebook.
+Obs.: O script de exportação da base SQL é o sample_data.sql 
 
 ## Funcionalidades
 - **Cadastro de Usuário**: Permite que novos usuários se registrem no sistema.
