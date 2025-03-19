@@ -54,8 +54,6 @@ Coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
 
 Abra o arquivo de configuração para banco de dados e altere as credenciais:
 ```
-php
-Copiar código
 // config.php
 $host = 'localhost';
 $usuario = 'root';
@@ -68,6 +66,7 @@ Cadastro: Crie uma conta de usuário com nome, email e senha.
 Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
+
 
 /crudphp
 │
