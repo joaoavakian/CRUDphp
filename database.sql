@@ -1,8 +1,10 @@
--- Create the database
+-- Cria o banco de dados, se não existir
 CREATE DATABASE IF NOT EXISTS social_media;
+
+-- Seleciona o banco de dados para uso
 USE social_media;
 
--- Create users table
+-- Cria a tabela de usuários
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -11,7 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create posts table
+-- Cria a tabela de postagens
 CREATE TABLE IF NOT EXISTS posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
