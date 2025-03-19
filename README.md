@@ -61,13 +61,13 @@ $senha = '';
 $banco = 'crud_php';
 ```
 
-```
-4. Funcionalidades do Sistema
+
+## 4. Funcionalidades do Sistema
 Cadastro: Crie uma conta de usuário com nome, email e senha.
 Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
-```
+
 
 ```
 Estrutura do projeto:
