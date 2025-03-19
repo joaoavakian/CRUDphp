@@ -67,6 +67,6 @@ Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
 
-
+```
 ## Estrutura do Projeto
 /crudphp ├── /css # Arquivos CSS ├── /img # Imagens do projeto ├── /includes # Arquivos PHP inclusos (conexão, funções) │ ├── config.php # Configuração de banco de dados │ └── db.php # Conexão com banco de dados ├── /js # Arquivos JavaScript ├── index.php # Página inicial com feed de postagens ├── login.php # Tela de login ├── register.php # Tela de registro └── logout.php # Logout do sistema
