@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Handle post creation
+// Criação do Post
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['content'])) {
     $content = trim($_POST['content']);
     $user_id = $_SESSION['user_id'];
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['content'])) {
     }
 }
 
-// Fetch posts
+// Requisição
 try {
     $stmt = $conn->prepare("
         SELECT posts.*, users.username 
@@ -60,7 +60,7 @@ try {
             <div class="alert alert-danger"><?php echo $error; ?></div>
         <?php endif; ?>
 
-        <!-- Create Post Form -->
+        <!-- Cria o post -->
         <div class="card mb-4">
             <div class="card-body">
                 <form method="POST" action="">
@@ -73,7 +73,7 @@ try {
             </div>
         </div>
 
-        <!-- Posts Feed -->
+        <!-- Post no feed -->
         <div class="posts-feed">
             <?php foreach ($posts as $post): ?>
                 <div class="card mb-3">
