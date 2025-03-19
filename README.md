@@ -20,8 +20,7 @@ Um banco de dados MySQL configurado com as tabelas necessárias.
 2. Configuração do Banco de Dados
 No seu banco de dados MySQL, crie o banco de dados e as tabelas necessárias para o sistema de usuários e postagens:
 
-sql
-Copiar código
+
 CREATE DATABASE crud_php;
 
 USE crud_php;
@@ -43,15 +42,12 @@ CREATE TABLE postagens (
 3. Instalação
 Baixe ou clone este repositório:
 
-bash
-Copiar código
 git clone https://github.com/seuusuario/crudphp.git
 Coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
 
 Abra o arquivo de configuração para banco de dados e altere as credenciais:
 
-php
-Copiar código
+
 // config.php
 $host = 'localhost';
 $usuario = 'root';
@@ -65,8 +61,7 @@ Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
 Estrutura do Projeto
-bash
-Copiar código
+
 /crudphp
 │
 ├── /css                  # Arquivos CSS
