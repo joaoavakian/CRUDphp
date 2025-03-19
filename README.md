@@ -13,20 +13,19 @@ PHP: Linguagem de programação para backend.
 Bootstrap: Framework front-end para um design moderno e responsivo.
 CSS: Estilização customizada para ajustes visuais.
 MySQL: Banco de dados para armazenamento das informações dos usuários e postagens.
-Como Utilizar:
-
+Como Utilizar
 1. Requisitos
 Servidor web com PHP e MySQL (ex.: XAMPP, WAMP, LAMP).
 Um banco de dados MySQL configurado com as tabelas necessárias.
-
-
-3. Configuração do Banco de Dados
+2. Configuração do Banco de Dados
 No seu banco de dados MySQL, crie o banco de dados e as tabelas necessárias para o sistema de usuários e postagens:
 
-
+sql
+Copiar código
 CREATE DATABASE crud_php;
 
 USE crud_php;
+
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -41,14 +40,18 @@ CREATE TABLE postagens (
     data_postagem TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
-
-
 3. Instalação
 Baixe ou clone este repositório:
-git clone https://github.com/seuusuario/crudphp.git e coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
 
+bash
+Copiar código
+git clone https://github.com/seuusuario/crudphp.git
+Coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
 
 Abra o arquivo de configuração para banco de dados e altere as credenciais:
+
+php
+Copiar código
 // config.php
 $host = 'localhost';
 $usuario = 'root';
@@ -62,6 +65,8 @@ Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
 Estrutura do Projeto
+bash
+Copiar código
 /crudphp
 │
 ├── /css                  # Arquivos CSS
