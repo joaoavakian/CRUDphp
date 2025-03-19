@@ -45,8 +45,7 @@ CREATE TABLE postagens (
 
 3. Instalação
 Baixe ou clone este repositório:
-git clone https://github.com/seuusuario/crudphp.git
-Coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
+git clone https://github.com/seuusuario/crudphp.git e coloque os arquivos no diretório do seu servidor web (ex.: htdocs no XAMPP).
 
 
 Abra o arquivo de configuração para banco de dados e altere as credenciais:
@@ -57,13 +56,11 @@ $senha = '';
 $banco = 'crud_php';
 Acesse o projeto no seu navegador e teste as funcionalidades.
 
-
 4. Funcionalidades do Sistema
 Cadastro: Crie uma conta de usuário com nome, email e senha.
 Login: Faça login com seu e-mail e senha registrados.
 Postagens: Crie postagens e visualize todas as postagens feitas por usuários no sistema.
 Logout: Encerre sua sessão com segurança.
-
 Estrutura do Projeto
 /crudphp
 │
